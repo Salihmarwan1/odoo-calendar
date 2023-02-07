@@ -32,6 +32,12 @@ import uuid
 import logging
 _logger = logging.getLogger(__name__)
 
+class ServiceController(http.Controller):
+
+    @http.route('/calendar/service', type='http', auth='public', website=True)
+    def calendar_service(self, **kw):
+        services = request.env['calendar.service'].sudo().search([])
+        return request.render('website_calendar_ce.service', {'services': services})
 
 class WebsiteCalendar(http.Controller):
     @http.route([

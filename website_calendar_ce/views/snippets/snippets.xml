@@ -14,7 +14,8 @@
             <div class="container">
                 <div class="oe_structure container mb128 o_website_calendar_booking">
                     <ul class="wizard mt32 float-right">
-                        <li class="text-primary">Booking<span class="chevron"></span></li>
+                        <li class="text-primary">Service<span class="chevron"></span></li>
+                        <li class="text-muted">Booking<span class="chevron"></span></li>
                         <li class="text-muted">Time<span class="chevron"></span></li>
                         <li class="text-muted">Confirmation<span class="chevron"></span></li>
                     </ul>
